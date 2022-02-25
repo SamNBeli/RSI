@@ -16,9 +16,6 @@ class EmailHelper: NSObject, MFMailComposeViewControllerDelegate {
     
     func sendEmail(subject:String, body:String, to:String){
         if !MFMailComposeViewController.canSendMail() {
-            print("No mail account found")
-            // Todo: Add a way to show banner to user about no mail app found or configured
-            // Utilities.showErrorBanner(title: "No mail account found", subtitle: "Please setup a mail account")
             return //EXIT
         }
         
@@ -38,8 +35,6 @@ class EmailHelper: NSObject, MFMailComposeViewControllerDelegate {
     
     static func getRootViewController() -> UIViewController? {
         UIApplication.shared.windows.first?.rootViewController
-        
-        // OR If you use SwiftUI 2.0 based WindowGroup try this one
-        // UIApplication.shared.windows.first?.rootViewController
+ 
     }
 }
