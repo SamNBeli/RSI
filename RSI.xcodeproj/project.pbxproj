@@ -58,13 +58,13 @@
 			path = HomeRadioControllerView;
 			sourceTree = "<group>";
 		};
-		3E0C6BE927C89C17007769E8 /* TextUsViewModel */ = {
+		3E0C6BE927C89C17007769E8 /* TextUsView */ = {
 			isa = PBXGroup;
 			children = (
 				3E6E31C227C8461A001647DA /* TextUsView.swift */,
 				3E0C6BEA27C89C4D007769E8 /* TextUsViewModel.swift */,
 			);
-			path = TextUsViewModel;
+			path = TextUsView;
 			sourceTree = "<group>";
 		};
 		3EAEE49E27C8109100593B73 = {
@@ -116,7 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				3E0C6BE627C858E5007769E8 /* HomeRadioControllerView */,
-				3E0C6BE927C89C17007769E8 /* TextUsViewModel */,
+				3E0C6BE927C89C17007769E8 /* TextUsView */,
 				3EAEE4AC27C8109100593B73 /* ContentView.swift */,
 				3EAEE4BF27C8122B00593B73 /* LogoView.swift */,
 				3E1B82E327C82DE300335D27 /* HomeView.swift */,
