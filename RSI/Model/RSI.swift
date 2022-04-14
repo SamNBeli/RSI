@@ -9,8 +9,12 @@ import Foundation
 import SwiftUI
 
 struct RSI: Hashable, Codable{
+    var id: Int
     var name: String
-    var link: String
     var description: String
     
+    var imageName: String
+    var image: Image {
+        Image(imageName)
+    }
 }
