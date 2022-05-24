@@ -17,7 +17,7 @@ struct ImageView: View {
                         Image(rsi.imageName)
                             .resizable()
                             .cornerRadius(20)
-                            .frame(width: 210)
+                            .frame(width: 360)
                             .scaledToFit()
                         
                         VStack(alignment: .leading) {
@@ -26,11 +26,12 @@ struct ImageView: View {
                             
                         }
                         .padding()
-                        .frame(width: 210, alignment: .leading)
+                        .frame(width: 360, alignment: .leading)
                         .background(.ultraThinMaterial)
                         .cornerRadius(20)
                     }
-                    .frame(width: 210, height: 250)
+                    //.frame(width: 210, height: 250)
+                    .frame(width: 360, height: 400)
                     .shadow(radius: 3)
                     
                 }

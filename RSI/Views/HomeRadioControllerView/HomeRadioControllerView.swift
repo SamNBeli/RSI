@@ -30,13 +30,14 @@ struct HomeRadioControllerView: View {
                     .fill(Color.gray)
                     .frame(height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
                     .opacity(0.3)
-                    .overlay(Text("Par Interac a:\nradiosaleminternational @ gmail . com"))
+                    .overlay(Text("Par Interac a:\nradiosaleminternational@gmail.com"))
                 Text("Merci")
                 Text("Que Dieu vous bénisse!\n\n")
                 Text("Glissez la page de haut en bas pour revenir à la page précédente")
                     .foregroundColor(Color(hue: 1.0, saturation: 0.942, brightness: 0.887))
                     .multilineTextAlignment(.center)
             }
+
         VStack{
             // Play/Pause Button
             Button(action: {

@@ -15,7 +15,15 @@ final class HomeRadioControllerViewModel{
     var stage = true
     
     func playPause(){
-        player = AVPlayer.init(url: url!)
+        guard let url = URL.init(string:"http://live.mcrmedias.net:8050/salem.mp3") else {
+            print("Resource not found")
+            return
+        }
+        do{
+        try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default )
+            try AVAudioSession.sharedInstance().setActive(true)
+        }catch{}
+        player = AVPlayer.init(url: url)
         self.stage.toggle()
         if self.stage{
         player.pause()
@@ -26,7 +34,7 @@ final class HomeRadioControllerViewModel{
     
     
     func share() {
-            guard let urlShare = URL(string: "https://developer.apple.com/xcode/swiftui/") else { return }
+            guard let urlShare = URL(string: "https://www.ebbsc.org/endirect/#.YoBw1y8r1ic") else { return }
             let activityVC = UIActivityViewController(activityItems: [urlShare], applicationActivities: nil)
                UIApplication.shared.windows.first?.rootViewController?.present(activityVC, animated: true, completion: nil)
         }

@@ -96,6 +96,7 @@
 			children = (
 				3E6E31C627C850A7001647DA /* Info.plist */,
 				3EAEE4AA27C8109100593B73 /* RSIApp.swift */,
+				3EAEE4AC27C8109100593B73 /* ContentView.swift */,
 				3EAEE4BA27C8110700593B73 /* Views */,
 				3EAEE4B927C810F800593B73 /* Model */,
 				3EF38C5528076438001408C5 /* Ressources */,
@@ -125,10 +126,10 @@
 		3EAEE4BA27C8110700593B73 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3EF38C59280765F9001408C5 /* AboutUsView */,
 				3EF38C58280765D4001408C5 /* HomeView */,
-				3E0C6BE627C858E5007769E8 /* HomeRadioControllerView */,
+				3EF38C59280765F9001408C5 /* AboutUsView */,
 				3E0C6BE927C89C17007769E8 /* TextUsView */,
+				3E0C6BE627C858E5007769E8 /* HomeRadioControllerView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -144,7 +145,6 @@
 		3EF38C58280765D4001408C5 /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
-				3EAEE4AC27C8109100593B73 /* ContentView.swift */,
 				3EAEE4BF27C8122B00593B73 /* LogoView.swift */,
 				3E1B82E327C82DE300335D27 /* HomeView.swift */,
 			);

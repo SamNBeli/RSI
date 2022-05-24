@@ -17,7 +17,7 @@ struct TextUsView: View {
                     Text("En personne au:\n")
                             .font(.title2)
                     Text("92 Bd Gréber, Gatineau, QC J8T 3P8\n\n")
-                    Text("Nos heure de service")
+                    Text("Nos heures d'ouverture")
                             .font(.title2)
                     }
                     
@@ -49,7 +49,7 @@ struct TextUsView: View {
                 
           
             Button(action: {
-               EmailHelper.shared.sendEmail(subject: "", body: "", to: "samneribelizaire@icloud.com")
+               EmailHelper.shared.sendEmail(subject: "", body: "", to: "radiosaleminternational@gmail.com")
              }) {
                  Text("Écrivez-nous")
              }
